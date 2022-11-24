@@ -25,3 +25,34 @@ Projects slowly and inexorably get totally out of hand. Most software disasters 
 The frog’s problem is different from the broken windows issue. In the Broken Window Theory, people lose the will to fight entropy because they perceive that no one else cares. The frog just doesn’t notice the change.
 
 Don’t be like the frog. Keep an eye on the big picture. Constantly review what’s happening around you, not just what you personally are doing.
+
+__Make Quality a Requirements Issue__
+
+Great software today is often preferable to perfect software tomorrow. 
+
+All the hard work is ruined if you don’t know when to stop. Don’t spoil a perfectly good program by overembellishment and overrefinement.
+
+__An investment in knowledge always pays the best interest.__
+
+Building your knowledge portfolio:
+- **Invest regularly.** Just as in financial investing, you must invest in your knowledge portfolio regularly. Even if it’s just a small amount, the habit itself is as important as the sums.
+- Diversify. The more technologies you are comfortable with, the better you will be able to adjust to change.
+- Manage risk. Don’t put all your technical eggs in one basket.
+- Buy low, sell high. Learning an emerging technology before it becomes popular can be just as hard as finding an undervalued stock, but the payoff can be just as rewarding.
+- Review and rebalance. 
+
+Goals:
+- Learn at least one new language every year. Different languages solve the same problems in different ways. By learning several different approaches, you can help broaden your thinking and avoid getting stuck in a rut.
+- Read a technical book in a quarter.
+- Read nontechnical books, too. Don’t forget the human side of the equation.
+- Take classes.
+- Participate in local user groups. Don’t just go and listen, but actively participate. Isolation can be deadly to your career; find out what people are working on outside of your company.
+- Experiment with different environments. If you’ve worked only in Windows, play with Unix at home.
+- Stay current. Subscribe to trade magazines and other journals.
+- Get wired.
+
+It doesn’t matter whether you ever use any of these technologies on a project, or even whether you put them on your resume. The process of learning will expand your thinking, opening you to new possibilities and new ways of doing things. Even if your project doesn’t use that technology, perhaps you can borrow some ideas. 
+
+If someone asks a question and you don't know the answer, __don't let it stop there__. Take it as a personal challenge to find the answer.
+
+__Critically Analyze What You Read and Hear__
