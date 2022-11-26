@@ -66,7 +66,7 @@ To communicate you need to understand the needs, interests and capabilities of y
 Form a strong mental picture of your audience. The __WISDOM__ acrostic may help:
 
 <p align="center">
-  <img width="400" src="" />
+  <img width="400" src="https://github.com/rsaitov/Books/blob/master/Andrew%20Hunt%2C%20David%20Thomas%20-%20The%20pragmatic%20programmer/Chapter%201%20-%20A%20Pragmatic%20Philosophy/wisdom%20audience.png" />
 </p>
 
 Make what you’re saying relevant in time, as well as in content. Sometimes all it takes is the simple question “Is this a good time to talk about...?”
