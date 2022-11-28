@@ -56,3 +56,30 @@ It doesn’t matter whether you ever use any of these technologies on a project,
 If someone asks a question and you don't know the answer, __don't let it stop there__. Take it as a personal challenge to find the answer.
 
 __Critically Analyze What You Read and Hear__
+
+Plan what you want to say. Write an outline.
+
+Jot down the ideas you want to communicate and plan a couple of strategies for getting them across. 
+
+To communicate you need to understand the needs, interests and capabilities of your audience. 
+
+Form a strong mental picture of your audience. The __WISDOM__ acrostic may help:
+
+<p align="center">
+  <img width="400" src="https://github.com/rsaitov/Books/blob/master/Andrew%20Hunt%2C%20David%20Thomas%20-%20The%20pragmatic%20programmer/Chapter%201%20-%20A%20Pragmatic%20Philosophy/wisdom%20audience.png" />
+</p>
+
+Make what you’re saying relevant in time, as well as in content. Sometimes all it takes is the simple question “Is this a good time to talk about...?”
+
+Adjust the style of your delivery to suit your audience.
+
+Don't concentrate only on content, make it look good.
+
+Involve your audience. Get their feedback and pick their brains.
+
+Be a listener. Encourage people to talk by asking questions. Turn the meeting into a dialog.
+
+Get back to people. Always respond to e-mails and voice mails, even is the response is simply "I'll get back to you later."
+
+__It’s Both What You Say and the Way You Say It__
+
