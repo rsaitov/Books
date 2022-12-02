@@ -54,3 +54,39 @@ The tracer code approach has many advantages:
 - **You have a better feel for progress.**
 
 Tracer bullets don't always hit their target. It's the same with tracer code.
+
+## Prototypes and Post-it Notes
+
+Prototyping is much cheaper than full-scale production. We build software prototypes in the same fashion, and for the same reasons - to analyze and expose risk, and to offer chances for correction at a greatly reduced cost.
+
+We tend to think of prototypes as code-based, but they don't always have to be.
+
+If you find yourself in an environment where you cannot give up the details, then you need to ask yourself if you are really building a protoype at all. Perhaps a tracer bullet style would be more appropriate in this case.
+
+You may prototype anything that carries risk, hasn't been tried before or that is absolutely critical to the final system. Anything unproven, experimental or doubtful. Anything you aren't comfortable with.
+
+Things to prototype:
+- Architecture.
+- New functionality in an existing system.
+- Structure or contents of external data.
+- Third-party tools or components.
+- Perfomance issues.
+- User interface design.
+
+It's not about the code produced, but in the lessons learned.
+
+**Prototype to Learn**
+
+On prototyping you may ignore:
+- Correctness.
+- Completeness.
+- Robustness.
+- Style.
+
+## Domain Languages
+
+Computer languages influence __how__ you think about a problem, and how you think about communication.
+
+**Program Close to the Problem Domain**
+
+A mini-language doesn't have to be used directly by the application to be useful.
