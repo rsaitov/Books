@@ -90,3 +90,22 @@ Computer languages influence __how__ you think about a problem, and how you thin
 **Program Close to the Problem Domain**
 
 A mini-language doesn't have to be used directly by the application to be useful.
+
+## Estimating
+
+In the process of producing an estimate, you’ll come to understand more about the world your programs inhabit.
+
+**Estimate to avoid surprises**
+
+Before we get too deeply into the techniques of building models, ask someone who's already done it.
+
+The first part of any estimation exercise is building an understanding of what’s being asked. Think about the scope before starting to guess.
+
+- Build a rough and bare-bones metnal model of the system.  
+- Break the model into components. Each component will typically have parameters that affect how it contributes to the overall model.
+- Give each parameter a value. The trick is to work out which parameters have the most impact on the result and concentrate on getting them about right.
+- Calculate the answers.
+- Keep track of your estimating prowess. Record your estimates so you can see how close you were.
+
+What to Say When Asked for an Estimate? You say **“I’ll get back to you.”**
+You almost always get better results if you slow the process down and spend some time.
