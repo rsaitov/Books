@@ -64,3 +64,16 @@ If it took a long time to fix this bug, ask yourself why. Is there anything you 
 - If the suspect code passes its unit tests, are the tests complete enough? What happens if you run the unit test with this data?
 - Do the conditions that caused this bug exist anywhere else in the
 system?
+
+## Text Manipulation
+
+We need to perform some transformation not readily handled by the basic tool set. We need a general purpose text manipulation tool.
+
+**Learn a Text Manipulation Language**
+
+A couple of applications to show the wide-range applicability of text manipulation languages:
+- Database schema maintenance.
+- Java property access.
+- Test data generation. Knit together and convert tens of thousands of records of test data.
+- Book writing. Check whether code is workable.
+- Generation Web documentation. Produce HTML from code.
