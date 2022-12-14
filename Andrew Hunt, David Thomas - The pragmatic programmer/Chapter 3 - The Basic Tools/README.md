@@ -66,7 +66,6 @@ If it took a long time to fix this bug, ask yourself why. Is there anything you 
 system?
 
 ## Text Manipulation
-
 We need to perform some transformation not readily handled by the basic tool set. We need a general purpose text manipulation tool.
 
 **Learn a Text Manipulation Language**
@@ -77,3 +76,20 @@ A couple of applications to show the wide-range applicability of text manipulati
 - Test data generation. Knit together and convert tens of thousands of records of test data.
 - Book writing. Check whether code is workable.
 - Generation Web documentation. Produce HTML from code.
+
+## Code Generators
+A programmer can build a code generator. Once built, it can be used throughout the life of the project at virtually no cost.
+
+**Write Code That Writes Code**
+
+### Passive Code Generators
+Once the result is produced, it becomes full-fledged source file in the project.
+Passive code generators have many uses:
+1. Creating new source files. Templates, source code control directives, copyright notices, standard comment blocks etc.
+2. Perfoming one-off conversions among programming languages.
+3. Producing lookup tables and other resources that are expensive to compute at runtime.
+
+### Active Code Generators
+Whenever you find yourself trying to get two **disparate environments** to work together, you should consider using active code generators.
+
+Keep the input format simple, and the code generator becomes simple.
