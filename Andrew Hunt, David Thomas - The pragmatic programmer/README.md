@@ -14,3 +14,5 @@ Chapter 1 - A Pragmatic Philosophy
 Chapter 2 - A Pragmatic Approach
 
 Chapter 3 - The Basic Tools
+
+Chapter 4 - Pragmatic Paranoia
