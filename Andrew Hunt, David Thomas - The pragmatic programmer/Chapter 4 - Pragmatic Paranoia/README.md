@@ -33,3 +33,10 @@ It’s easy to fall into the **“it can’t happen”** mentality. You could co
 
 One of the benefits of detecting problems as soon as you can is that you can crash earlier. A **dead program** normally does a lot less damage than a **crippled** one.
 
+## Assertive Programming
+**If It Can’t Happen, Use Assertions to Ensure That It Won’t**
+Your first line of defense is checking for any possible error, and your second is using assertions to try to detect those you’ve missed.
+**Heisenbug** is a software bug that seems to disappear or alter its behavior when one attempts to study it.
+
+## When to use exceptions
+**Use Exceptions For Exceptional Problems**
