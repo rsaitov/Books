@@ -40,3 +40,9 @@ Your first line of defense is checking for any possible error, and your second i
 
 ## When to use exceptions
 **Use Exceptions For Exceptional Problems**
+
+## How to Balance Resources
+**Finish what you start** - ideally, the routine that allocates a resource should also free it.
+
+- Deallocate resources in the opposite order to that in which you allocate them.
+- When allocating the same set of resources in different places in your code, always allocate them in the same order.
