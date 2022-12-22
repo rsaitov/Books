@@ -2,7 +2,7 @@
 ## Decoupling and the Law of Demeter
 Organize your code into cells (modules) and limit the interaction between them. Systems with many unnecessary dependencies are very hard (and expensive) to maintain, and tend to be highly unstable.
 
-**The Law of Demeter** for functions states that any method of an object should call only metods belonging to:
+**The Law of Demeter** for functions states that any method of an object should call only methods belonging to:
 - itself;
 - any parameters that were passed in to the method;
 - any objects it created;
@@ -33,3 +33,17 @@ You write a __bean__ - a self-contained object that follows certain conventions 
 We can let applications configure each other - software that adapts itself to its environment.
 
 Keep metadata in **human-readable** format.
+
+## Temporal Coupling
+There are two aspects of time that are important to us: concurrency (things happening at the same time) and ordering (the relative positions of things in time). We need to allow for cuncurrency and to think about decoupling any time or order dependencies.
+
+You can use activity diagram to maximize parallelism by identifying activities that __could__ be performed in parallel, but aren't.
+
+In a **hungry consumer** model, you replace the central scheduler with a number of independent consumer tasks and a centralized work queue. Each consumer task grabs a piece from the work queue and goes on about the business of processing it. 
+
+**Design Using Services**
+
+Instead of components, we have really created __services__ - independent, concurrent objects behind well-defined, consistens interfaces.
+
+**Always Design for Concurrency**
+By planning for **concurrency, and decoupling operations in time**, you have all these options—including the stand-alone option, where you can choose not to be concurrent.
