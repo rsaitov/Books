@@ -47,3 +47,25 @@ Instead of components, we have really created __services__ - independent, concur
 
 **Always Design for Concurrency**
 By planning for **concurrency, and decoupling operations in time**, you have all these options—including the stand-alone option, where you can choose not to be concurrent.
+
+## It's Just a View
+Each module has a single, well-defined responsibility. Using **events** minimizes coupling between objects.
+
+### Public/Subscribe
+Pushing all the events through a single routine violates encapsulation - one routine now has to have intimate knowledge of the interactions among many objects.
+
+Object should be able to register only the events they need, and should never be sent events they don't need.
+
+We can use this publish/subscribe mechanism to implement a very important design concept: the separation of a model from views of the model.
+
+### Model-View-Controller
+MVC-idiom: separating the model from both the GUI that represents it and the controls that manage the view.
+
+__The view and controller are tightly coupled, and in some implementations of MVC the view and controller are a single component.__
+
+- **Model**. The abstract data model representing the target object. The model has no direct knowledge of any views or controllers.
+- **View**. A way to interpret the model. It subscribes to changes in the model and logical events from the controller.
+- **Controller**. A way to control the view and provide the model with new data. It publishes events to both the model and the view.
+
+## Blackboards
+A blackboard system lets us decouple our objects from each other completely, providing a forum where knowledge consumers and producers can exchange data anonymously and asynchronously.
