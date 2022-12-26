@@ -12,7 +12,7 @@ Don’t leave “broken windows” (bad designs, wrong decisions, or poor code) 
 
 Neglect accelerates the rot faster than any other factor.
 
-On the other hand, if you find yourself on a team and a project where the code is pristinely beautiful — cleanly written, well designed, and elegant — you will likely take extra special care not to  mess it up, just like the firefighters. Even if there’s a fire raging (deadline, release date, trade show demo, etc.), you don’t want to be the first one to make a mess.
+On the other hand, if you find yourself on a team and a project where the code is pristinely beautiful — cleanly written, well designed, and elegant — you will likely take extra special care not to mess it up, just like the firefighters. Even if there’s a fire raging (deadline, release date, trade show demo, etc.), you don’t want to be the first one to make a mess.
 
 __Be a catalyst for change__
 
@@ -36,18 +36,18 @@ __An investment in knowledge always pays the best interest.__
 
 Building your knowledge portfolio:
 - **Invest regularly.** Just as in financial investing, you must invest in your knowledge portfolio regularly. Even if it’s just a small amount, the habit itself is as important as the sums.
-- Diversify. The more technologies you are comfortable with, the better you will be able to adjust to change.
-- Manage risk. Don’t put all your technical eggs in one basket.
-- Buy low, sell high. Learning an emerging technology before it becomes popular can be just as hard as finding an undervalued stock, but the payoff can be just as rewarding.
-- Review and rebalance. 
+- **Diversify**. The more technologies you are comfortable with, the better you will be able to adjust to change.
+- **Manage risk**. Don’t put all your technical eggs in one basket.
+- **Buy low, sell high**. Learning an emerging technology before it becomes popular can be just as hard as finding an undervalued stock, but the payoff can be just as rewarding.
+- **Review and rebalance**. 
 
 Goals:
-- Learn at least one new language every year. Different languages solve the same problems in different ways. By learning several different approaches, you can help broaden your thinking and avoid getting stuck in a rut.
-- Read a technical book in a quarter.
+- Learn at least **one new language every year**. Different languages solve the same problems in different ways. By learning several different approaches, you can help broaden your thinking and avoid getting stuck in a rut.
+- Read a technical book **in a quarter**.
 - Read nontechnical books, too. Don’t forget the human side of the equation.
 - Take classes.
-- Participate in local user groups. Don’t just go and listen, but actively participate. Isolation can be deadly to your career; find out what people are working on outside of your company.
-- Experiment with different environments. If you’ve worked only in Windows, play with Unix at home.
+- **Participate** in local user groups. Don’t just go and listen, but actively participate. Isolation can be deadly to your career; find out what people are working on outside of your company.
+- **Experiment** with different environments. If you’ve worked only in Windows, play with Unix at home.
 - Stay current. Subscribe to trade magazines and other journals.
 - Get wired.
 
