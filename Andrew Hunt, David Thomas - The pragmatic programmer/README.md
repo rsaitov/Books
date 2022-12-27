@@ -19,3 +19,5 @@ Chapter 3 - The Basic Tools
 Chapter 4 - Pragmatic Paranoia
 
 Chapter 5 - Bend, or Break
+
+Chapter 6 - While You Are Coding
