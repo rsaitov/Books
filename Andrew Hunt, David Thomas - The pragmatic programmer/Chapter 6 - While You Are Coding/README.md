@@ -31,3 +31,15 @@ At all levels, people operate with many assumptions in mind — but these assump
 - **Don’t be a slave to history**. Don’t let existing code dictate future code.
 
 So next time something seems to work, but you don’t know why, **make sure** it isn’t just a coincidence.
+
+## Algorithm Speed
+Another kind of estimating that Pragmatic Programmers use almost daily: estimating the resources that algorithms use—time, processor, memory, and so on.
+
+The __O()__ notation is a mathematical way of dealing with approximations.
+
+O()-notation image here...
+
+**Test Your Estimates**
+
+### Best Isn’t Always Best
+You also need to be pragmatic about choosing appropriate algorithms—the fastest one is not always the best for the job. 

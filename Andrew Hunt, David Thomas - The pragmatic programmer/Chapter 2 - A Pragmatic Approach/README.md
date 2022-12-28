@@ -101,7 +101,7 @@ Before we get too deeply into the techniques of building models, ask someone who
 
 The first part of any estimation exercise is building an understanding of what’s being asked. Think about the scope before starting to guess.
 
-- Build a rough and bare-bones metnal model of the system.  
+- Build a rough and bare-bones mental model of the system.  
 - Break the model into components. Each component will typically have parameters that affect how it contributes to the overall model.
 - Give each parameter a value. The trick is to work out which parameters have the most impact on the result and concentrate on getting them about right.
 - Calculate the answers.
