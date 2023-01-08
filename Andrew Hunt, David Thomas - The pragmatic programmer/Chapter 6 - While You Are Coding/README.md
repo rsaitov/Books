@@ -37,9 +37,49 @@ Another kind of estimating that Pragmatic Programmers use almost daily: estimati
 
 The __O()__ notation is a mathematical way of dealing with approximations.
 
-O()-notation image here...
+<p align="center">
+  <img width="400" src="https://github.com/rsaitov/Books/blob/master/Andrew%20Hunt%2C%20David%20Thomas%20-%20The%20pragmatic%20programmer/Chapter%206%20-%20While%20You%20Are%20Coding/O-notation.png" />
+</p>
 
 **Test Your Estimates**
 
 ### Best Isn’t Always Best
 You also need to be pragmatic about choosing appropriate algorithms—the fastest one is not always the best for the job. 
+
+## Refactoring
+Software is more like **gardening**. You plant many things in a garden according to an initial plan and conditions. Some thrive, others are destined to end up as compost. 
+
+Rewriting, reworking, and re-architecting code is collectively known as **refactoring**.
+
+Any number of things may cause code to qualify for refactoring:
+- Duplication.
+- Nonorthogonal design.
+- Outdated knowledge.
+- Perfomance.
+
+**Refactor Early, Refactor Often**
+
+Keep track of the things that need to be refactored. If you can’t refactor something immediately, make sure that it gets placed on the schedule.
+
+Martin Fowler's tips:
+1. Don't try to refactor and add functionality at the same time.
+2. Make sure you have good tests before you begin refactoring. Run the tests as often as possible. That way you will know quickly if your changes have broken anything.
+3. Take short, deliberate steps: move a field from one class to another, fuse two similar methods into a superclass. 
+
+If it hurts now, but is going to hurt even more later, you might as well get it over with. Remember the lessons of Software Entropy: **don’t live with broken windows**.
+
+## Code That's Easy to Test
+
+We need to build testability into the software from the very beginning, and test each piece thoroughly before trying to wire them together.
+
+A software **unit test** is code that exercises a module. Typically, the unit test will establish some kind of artificial environment, then invoke routines in the module being tested.
+
+We like to think of unit testing as __testing against contract__. When you design a module, or even a single routine, you should design both its contract and the code to test that contract.
+
+Providing unit tests isn’t enough. You **must run them**, and run them **often**.
+
+**Test Your Software, or Your Users Will**
+
+Wizards just produce a mass of code and a pretty spiffy-looking program.
+
+**Don’t Use Wizard Code You Don’t Understand**
