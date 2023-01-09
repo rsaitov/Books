@@ -21,3 +21,5 @@ Chapter 4 - Pragmatic Paranoia
 Chapter 5 - Bend, or Break
 
 Chapter 6 - While You Are Coding
+
+Chapter 7 - Before the Project
