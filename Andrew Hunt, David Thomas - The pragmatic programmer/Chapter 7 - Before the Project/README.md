@@ -13,7 +13,7 @@ The requirements mining process is also the time to start to build a rapport wit
 __Use cases__ is a concept to capture requirements. They let you describe a particular use of the system — not in terms of user interface, but in a more abstract fashion.
 
 <p>
-  <img width="800" src="./use-case-sample.png" alt="use-case-sample" />
+  <img src="./use-case-sample.png" alt="use-case-sample" />
 </p>
 
 Don’t be a slave to any notation; use **whatever method best** communicates the requirements with your audience.
