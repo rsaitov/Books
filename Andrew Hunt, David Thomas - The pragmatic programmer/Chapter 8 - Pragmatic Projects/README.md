@@ -64,3 +64,42 @@ the schedule, with all the necessary resources allocated to the task.
 
 ## Tightening the Net
 If a bug slips through the net of existing tests, you need to add a new test to trap it next time.
+
+## It's All Writing
+There are basically two kinds of documentation produced for a project: internal and external.
+### Comments in Code
+In general, comments should discuss why something is done, its purpose and its goal. The code already shows how it is done.
+
+We like to see a simple module-level header comment, comments for significant data and type declarations, and a brief per-class and permethod header, describing how the function is used and anything that it does that is not obvious.
+
+A document’s presentation should be independent of its content.
+
+### Markup Languages
+Many technical authors now use __DocBook__ to define their documents. DocBook is an SGML-based markup standard that carefully identifies every component in a document.
+
+**Documentation and code are different views of the same underlying model, but the view is all that should be different.**
+
+## Great Expectations
+In an abstract sense, an application is successful if it correctly implements its specifications. 
+
+In reality, the success of a project is measured by how well it meets the __expectations__ of its users.
+
+Give users a little bit more than they were expecting. 
+
+Some things you can add relatively easily that look good to the average user include:
+- Balloon or ToolTip help
+- Keyboard shortcuts
+- A quick reference guide as a supplement to the user’s manual
+- Colorization
+- Log file analyzers
+- Automated installation
+- Tools for checking the integrity of the system
+- The ability to run multiple versions of the system for training
+- A splash screen customized for their organization
+
+## Pride and Prejudice
+Pragmatic Programmers don’t shirk from responsibility. Instead, we rejoice in accepting challenges and in making our expertise well known. If we are responsible for a design, or a piece of code, we do a job we can be proud of.
+
+We want to see pride of ownership. "I wrote this, and I stand behind my work." Your signature should come to be recognized as an indicator of quality. People should see your name on a piece of code and expect it to be solid, well written, tested, and documented. A really professional job. Written by a real professional.
+
+A Pragmatic Programmer.
