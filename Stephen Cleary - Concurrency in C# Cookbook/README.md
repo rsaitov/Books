@@ -6,3 +6,5 @@
 
 We are already at the point where concurrency is ubiquitous, and understanding these techniques and their uses is essential
 knowledge for the professional developer.
+
+Chapter 1 - Concurrency: An Overview
