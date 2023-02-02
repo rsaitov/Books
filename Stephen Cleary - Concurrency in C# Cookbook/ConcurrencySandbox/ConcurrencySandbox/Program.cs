@@ -1,1 +1,3 @@
-﻿await AsyncBasics.Demonstrate();
+﻿// await AsyncBasics.Demonstrate();
+
+ParallelBasics.Demonstrate();

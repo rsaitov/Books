@@ -10,3 +10,5 @@ knowledge for the professional developer.
 Chapter 1 - Concurrency: An Overview
 
 Chapter 2 - Async Basics
+
+Chapter 3 - Parallel Basics
