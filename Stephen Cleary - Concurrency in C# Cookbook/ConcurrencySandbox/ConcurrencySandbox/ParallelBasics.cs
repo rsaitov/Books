@@ -1,13 +1,14 @@
-﻿using System.Collections.Concurrent;
-using System.Collections.Generic;
+﻿using System;
+using System.Collections.Concurrent;
 using System.Diagnostics;
 
 public static class ParallelBasics
 {
-    public static void Demonstrate()
+    public async static Task Demonstrate()
     {
         ParallelProcessingOfData();
         ParallelAggregation();
+        ParallelInvocation();
     }
 
     /// <summary>
@@ -116,5 +117,27 @@ public static class ParallelBasics
         stopwatch.Stop();
 
         return stopwatch.ElapsedMilliseconds;
+    }
+
+    /// <summary>
+    /// 3.3 Parallel Invocation
+    /// </summary>
+    private static void ParallelInvocation()
+    {
+        var rand = new Random();
+        var numbers = Enumerable.Range(1, 1000)
+            .Select(x => rand.Next(1, 50))
+            .ToArray();
+
+        Parallel.Invoke(
+                () => ProcessPartialArray(numbers, 0, numbers.Length / 2),
+                () => ProcessPartialArray(numbers, numbers.Length / 2, numbers.Length)
+        );
+    }
+
+    static void ProcessPartialArray(int[] array, int begin, int end)
+    {
+        for (int i = begin; i < end; i++)
+            Console.WriteLine($"Process {i}");
     }
 }
