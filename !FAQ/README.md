@@ -38,3 +38,49 @@ CancellationTokenSource и CancellationToken.
 Fire and forget - кидаете работу на выполнение и результат не нужен.
 ### Как связаны Threads и Task?
 Таски выполняются на пуле потоков. Некоторые таски могут побывать на десятке потоков. А могут быть другие, которые закомплитятся вообще не побывав ни на одном потоке.
+
+## Authentication
+### Fundamentals
+Process of verifying someone's identity.
+
+Factors:
+- [Knowledge] Username / Password
+- [Knowledge] Security Codes
+- [Posession] Hard Tokens / Soft Tokens
+- [Qualities] Biometric
+
+Miltifactor Authentication (MFA) - type of auth where we rely on more than one factor. Much more secure than Single Factor Authentication.
+
+Two Factor Authentication (2FA) - MFA with 2 factors.
+
+### Authentication vs Authorization
+Authentication - process of verifying identity.
+Authorization - process of checking the permission of the authenticated user.
+
+### Auth Strategies
+- Basic Authentication
+- Session based Authentication
+- Token based Authentication
+- JWT Authentication
+- OAuth - open Authorization
+- Single Sign On (SSO)
+
+### Basic Authentication
+Basic Authentication != Username / Password
+Basic Authentication is a part of Http Specification.
+
+Server doesn't find **Authorization header** and response with header:
+
+```
+WWW-Authenticate: Basic realm="some_realm".
+```
+
+Client browser shows auth screen for user. After submitting the browser automatically encode the credentials using base64 encoding and set the Authorization header of the request:
+
+```
+Authorization: Basic base64("username:password")
+```
+
+Server decode the header and verify credentials. If both are valid the server respond with successfull response.
+
+**Warning**: Anyone between you and browser can intercept auth header and get your credentials. Always use **https** instead of http to avoid this.
