@@ -22,3 +22,17 @@ When you build your mesh (or pipeline), consider how errors should be handled. I
 During processing, you need to dynamically change the structure of your dataflow.
 
 You can link or unlink dataflow blocks at any time; data can be freely passing through the mesh and it is still safe to link or unlink at any time. Both linking and unlinking are fully threadsafe.
+
+## 4.4. Throttling Blocks
+You have a fork scenario in your dataflow mesh and want the data to flow in a loadbalancing way.
+
+## 4.5. Parallel Processing with Dataflow Blocks
+You want some parallel processing done within your dataflow mesh.
+
+If you have one particular block that does heavy CPU computations—then you can instruct that block to operate in parallel on its input data by setting the MaxDegreeOfParallelism option. By default, MaxDegreeOfParallelism is set to 1, so each dataflow block will only process one piece of data at a time.
+
+## 4.6. Creating Custom Blocks
+You have some reusable logic that you wish to place into a custom dataflow block. This
+enables you to create larger blocks that contain complex logic.
+
+You can cut out any part of a dataflow mesh that has a single input and output block by using the Encapsulate method. Encapsulate will create a single block out of the two endpoints.

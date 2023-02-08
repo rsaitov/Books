@@ -1,6 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Data;
 using System.Threading.Tasks.Dataflow;
-using static System.Reflection.Metadata.BlobBuilder;
 
 namespace ConcurrencySandbox;
 
@@ -11,6 +10,9 @@ public static class DataflowBasics
         await LinkingBlocks();
         await PropagationErrors();
         UnlinkingBlocks();
+        ThrottlingBlocks();
+        ParallelProcessingWithDataflowBlocks();
+        CreateCustomBlock();
     }
 
     /// <summary>
@@ -87,7 +89,8 @@ public static class DataflowBasics
             Console.WriteLine($"MultiplyBlock {item}");
             return item * 2;
         });
-        var subtractBlock = new TransformBlock<int, int>(item => {
+        var subtractBlock = new TransformBlock<int, int>(item =>
+        {
 
             Console.WriteLine($"SubtractBlock {item}");
             return item - 2;
@@ -102,5 +105,53 @@ public static class DataflowBasics
         link.Dispose();
 
         multiplyBlock.Post(3);
+    }
+
+    /// <summary>
+    /// 4.4. Throttling Blocks
+    /// </summary>
+    private static void ThrottlingBlocks()
+    {
+        var sourceBlock = new BufferBlock<int>();
+
+        var options = new DataflowBlockOptions { BoundedCapacity = 1 };
+
+        var targetBlockA = new BufferBlock<int>(options);
+        var targetBlockB = new BufferBlock<int>(options);
+
+        sourceBlock.LinkTo(targetBlockA);
+        sourceBlock.LinkTo(targetBlockB);
+    }
+
+    /// <summary>
+    /// 4.5. Parallel Processing with Dataflow Blocks
+    /// </summary>
+    private static void ParallelProcessingWithDataflowBlocks()
+    {
+        var multiplyBlock = new TransformBlock<int, int>(
+            item => item * 2,
+            new ExecutionDataflowBlockOptions
+            {
+                MaxDegreeOfParallelism = DataflowBlockOptions.Unbounded
+            }
+        );
+
+        var subtractBlock = new TransformBlock<int, int>(item => item - 2);
+
+        multiplyBlock.LinkTo(subtractBlock);
+    }
+
+    /// <summary>
+    /// 4.6. Creating Custom Blocks
+    /// </summary>
+    private static IPropagatorBlock<int, int> CreateCustomBlock()
+    {
+        var multiplyBlock = new TransformBlock<int, int>(item => item * 2);
+        var addBlock = new TransformBlock<int, int>(item => item + 2);
+        var divideBlock = new TransformBlock<int, int>(item => item / 2);
+        var flowCompletion = new DataflowLinkOptions { PropagateCompletion = true };
+        multiplyBlock.LinkTo(addBlock, flowCompletion);
+        addBlock.LinkTo(divideBlock, flowCompletion);
+        return DataflowBlock.Encapsulate(multiplyBlock, divideBlock);
     }
 }
