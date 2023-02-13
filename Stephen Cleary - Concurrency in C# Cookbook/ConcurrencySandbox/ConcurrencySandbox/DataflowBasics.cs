@@ -1,8 +1,6 @@
 ﻿using System.Data;
 using System.Threading.Tasks.Dataflow;
 
-namespace ConcurrencySandbox;
-
 public static class DataflowBasics
 {
     public async static Task Demonstrate()
