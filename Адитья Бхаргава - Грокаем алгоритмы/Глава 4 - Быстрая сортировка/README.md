@@ -17,19 +17,20 @@ public class Program
 {
 	public static void Main()
 	{
-		int[] arrayOfIntegers = {3, 4, 6, 7};
-		var sumOfArray = GetSum(arrayOfIntegers);
-		Console.WriteLine(sumOfArray);
+	    int[] arrayOfIntegers = {3, 4, 6, 7};
+	    var sumOfArray = GetSum(arrayOfIntegers);
+	    Console.WriteLine(sumOfArray);
 	}
 	
 	private static int GetSum(int[] arr)
 	{
-		if (arr.Length == 1)
-			return arr[0];
-		
-        var newArr = new int[arr.Length-1];
-        Array.Copy(arr, 1, newArr, 0, arr.Length-1);
-        return arr[0] + GetSum(newArr);
+	    if (arr.Length == 1)
+	        return arr[0];
+
+	    var newArr = new int[arr.Length-1];
+	    Array.Copy(arr, 1, newArr, 0, arr.Length-1);
+	    
+	    return arr[0] + GetSum(newArr);
 	}
 }
 ```
