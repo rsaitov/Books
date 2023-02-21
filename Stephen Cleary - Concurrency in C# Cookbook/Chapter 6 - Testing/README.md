@@ -38,3 +38,18 @@ public void MyMethodAsync_DoesNotThrow()
     });
 }
 ```
+
+## 6.4. Unit Testing Dataflow Meshes
+You have a dataflow mesh in your application, and you need to verify it works correctly.
+
+Dataflow meshes are independent: they have a lifetime of their own and are asynchronous by nature. So, the most natural way to test them is with an asynchronous unit test.
+
+## 6.5. Unit Testing Rx Observables
+Part of your program is using IObservable<T>, and you need to find a way to unit test it.
+
+Reactive Extensions has a number of operators that produce sequences (e.g., Return) and other operators that can convert a reactive sequence into a regular collection or item (e.g., SingleAsync). We will use operators like Return to create stubs for observable dependencies, and operators like SingleAsync to test the output.
+
+## 6.6. Unit Testing Rx Observables with Faked Scheduling
+You have an observable that is dependent on time, and want to write a unit test that is not dependent on time.
+
+The Rx library was designed with testing in mind; in fact, the Rx library itself is extensively unit tested. To enable this, Rx introduced a concept called a scheduler, and every Rx operator that deals with time is implemented using this abstract scheduler.
