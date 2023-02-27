@@ -18,3 +18,5 @@ Chapter 4 - Dataflow Basics
 Chapter 5 - Rx Basics
 
 Chapter 6 - Testing
+
+Chapter 7 - Interop
