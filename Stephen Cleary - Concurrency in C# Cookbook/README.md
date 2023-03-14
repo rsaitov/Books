@@ -22,3 +22,5 @@ Chapter 6 - Testing
 Chapter 7 - Interop
 
 Chapter 8 - Collections
+
+Chapter 9 - Cancellation
