@@ -24,3 +24,5 @@ Chapter 7 - Interop
 Chapter 8 - Collections
 
 Chapter 9 - Cancellation
+
+Chapter 10 - Functional-Friendly OOP
