@@ -81,3 +81,57 @@ class MyFundamentalType : IMyFundamentalType, IAsyncInitialization
 }
 
 ```
+
+## 10.4. Async Properties
+You have a property that you want to make async. The property is not used in data binding.
+
+```C#
+
+// What we think we want (does not compile).
+public int Data
+{
+    async get
+    {
+        await Task.Delay(TimeSpan.FromSeconds(1));
+        return 13;
+    }
+}
+
+```
+
+If your “asynchronous property” needs to kick off a new (asynchronous) evaluation each time it is read, then it is not a property. It is actually a method in disguise.
+
+```C#
+
+// As an asynchronous method.
+public async Task<int> GetDataAsync()
+{
+    await Task.Delay(TimeSpan.FromSeconds(1));
+    return 13;
+}
+
+```
+
+The other scenario is that the “asynchronous property” should only kick off a **single (asynchronous) evaluation** and that the resulting value should be cached for future use. In this case, you can use asynchronous lazy initialization.
+
+```C#
+
+// As a cached value.
+public AsyncLazy<int> Data
+{
+    get { return _data; }
+}
+private readonly AsyncLazy<int> _data =
+    new AsyncLazy<int>(async () =>
+    {
+        await Task.Delay(TimeSpan.FromSeconds(1));
+        return 13;
+    });
+
+```
+
+## 10.5. Async Events
+You have an event that you need to use with handlers that might be async, and you need to detect whether the event handlers have completed.
+
+## 10.6. Async Disposal
+You have a type that allows asynchronous operations but also needs to allow disposal of its resources.
