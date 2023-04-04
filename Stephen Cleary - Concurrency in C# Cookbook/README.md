@@ -26,3 +26,5 @@ Chapter 8 - Collections
 Chapter 9 - Cancellation
 
 Chapter 10 - Functional-Friendly OOP
+
+Chapter 11 - Synchronization
